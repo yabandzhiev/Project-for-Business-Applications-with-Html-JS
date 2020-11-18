@@ -12,7 +12,7 @@
         z = 0;
 
       function validPhone(passedPhone) {
-        let check = /^(0)([0-9]*)/g.test(passedPhone);
+        let check = /^(0)([0-9]*$)/g.test(passedPhone);
         if ((passedPhone = "")) return false;
         if (!check) return false;
 
